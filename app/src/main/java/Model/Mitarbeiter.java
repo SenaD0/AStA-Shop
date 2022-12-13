@@ -1,21 +1,23 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class Mitarbeiter extends Benutzer {
 
-	public Mitarbeiter() {
-		super(benutzerID, benutzername, email, passwort, mitarbeiter, bewertung, produkt);
-	}
+    public Mitarbeiter(int benutzerID, String benutzername, String email, String passwort, boolean mitarbeiter, ArrayList<Bewertung> bewertung, ArrayList<Produkt> produkt) {
+        super(benutzerID, benutzername, email, passwort, mitarbeiter, bewertung, produkt);
+    }
 
-	public void setMitarbeiter(Benutzer Benutzer) {
+    public void setMitarbeiter(Benutzer benutzer) {
+        benutzer.setMitarbeiter(true);
+    }
 
-	}
+    public void addProdukt(String name, int menge, int preis, String allergene) {
 
-	public void addProdukt(String Name, int Menge, int Preis, String Allergene) {
+    }
 
-	}
+    public void bewertungloeschen(Bewertung bewertung) {
 
-	public void bewertungloeschen(Bewertung Bewertung) {
-
-	}
+    }
 
 }

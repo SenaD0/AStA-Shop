@@ -2,9 +2,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.astashop.MainActivity">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/action_qr"
+        android:icon="@drawable/qr"
+        android:title="@string/qr"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_startseite"
+        android:icon="@drawable/startseite"
+        android:title="@string/startseite"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_profil"
+        android:icon="@drawable/log_in_profil_anzeigen"
+        android:title="@string/profil"
+        app:showAsAction="ifRoom"/>
 </menu>
