@@ -24,4 +24,4 @@ public class Ernaehrungsform {
         this.name = name;
     }
 
-}
+} //lieber als enum klasse
