@@ -4,5 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blueBackground"
-    tools:context=".FirstFragment" />
+    android:background="@color/screenBackground"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/qr_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/nav_button_background"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qr"
+        app:tint="#000000" />
+
+    <ImageButton
+        android:id="@+id/profile_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/nav_button_background"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log_in_profil_anzeigen" />
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/nav_button_background"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintStart_toEndOf="@+id/qr_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/startseite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
