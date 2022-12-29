@@ -13,4 +13,19 @@
     <string name="qr" />
     <string name="startseite" />
     <string name="profil" />
+    <string name="qr_code_scannen">QR-Code scannen</string>
+    <string name="profil_anzeigen">Profil anzeigen</string>
+    <string name="startseite_anzeigen">Startseite anzeigen</string>
+    <string name="produkt_hinzuf_gen">Produkt hinzufügen:</string>
+    <string name="produktname">Produktname:</string>
+    <string name="preis">Preis:</string>
+    <string name="menge">Menge:</string>
+    <string name="allergene">Allergene:</string>
+    <string name="koscher">Koscher</string>
+    <string name="halal">Halal</string>
+    <string name="vegetarisch">Vegetarisch</string>
+    <string name="vegan">Vegan</string>
+    <string name="zutaten_bearbeiten">Zutaten bearbeiten</string>
+    <string name="foto_hochladen">Foto hochladen</string>
+    <string name="best_tigen">Bestätigen</string>
 </resources>
