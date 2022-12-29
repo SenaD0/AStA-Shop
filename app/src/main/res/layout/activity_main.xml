@@ -94,6 +94,8 @@
 
     <EditText
         android:id="@+id/editText_Produktname"
+        android:autofillHints="@strings/produktname"
+        android:hint="@string/vorhanden_produktnamen"
         android:layout_width="263dp"
         android:layout_height="61dp"
         android:ems="10"
@@ -106,6 +108,8 @@
 
     <EditText
         android:id="@+id/editText_Preis"
+        android:autofillHints="@strings/Preis"
+        android:hint="@string/preis_nur_in_euro"
         android:layout_width="263dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -118,6 +122,8 @@
 
     <EditText
         android:id="@+id/editText_Menge"
+        android:autofillHints="@strings/Menge"
+        android:hint="@string/g_ltige_menge"
         android:layout_width="260dp"
         android:layout_height="55dp"
         android:ems="10"
@@ -130,6 +136,8 @@
 
     <EditText
         android:id="@+id/editText_Allergene"
+        android:autofillHints="@strings/allergene"
+        android:hint="@string/vorhandene_allergie"
         android:layout_width="256dp"
         android:layout_height="56dp"
         android:ems="10"

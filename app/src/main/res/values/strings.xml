@@ -28,4 +28,8 @@
     <string name="zutaten_bearbeiten">Zutaten bearbeiten</string>
     <string name="foto_hochladen">Foto hochladen</string>
     <string name="best_tigen">Bestätigen</string>
+    <string name="vorhanden_produktnamen">Vorhanden Produktnamen</string>
+    <string name="preis_nur_in_euro">Preis nur in Euro</string>
+    <string name="g_ltige_menge">Gültige Menge</string>
+    <string name="vorhandene_allergie">Vorhandene Allergie</string>
 </resources>
