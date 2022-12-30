@@ -32,4 +32,8 @@
     <string name="preis_nur_in_euro">Preis nur in Euro</string>
     <string name="g_ltige_menge">Gültige Menge</string>
     <string name="vorhandene_allergie">Vorhandene Allergie</string>
+    <string name="startseite2">Startseite</string>
+    <string name="benutzerprofil">Benutzerprofil</string>
+    <string name="qr_code">QR-Code</string>
+    <string name="zutaten_ausw_hlen">Zutaten auswählen</string>
 </resources>
