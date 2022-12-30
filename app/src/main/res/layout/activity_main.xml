@@ -96,48 +96,64 @@
         android:id="@+id/editText_Produktname"
         android:layout_width="263dp"
         android:layout_height="61dp"
+        android:autofillHints="no"
         android:ems="10"
+        android:hint="@string/produktname"
         android:inputType="textPersonName"
         android:text="@string/produktname"
+        android:textColor="#FAFAFA"
         app:layout_constraintBottom_toTopOf="@+id/editText_Preis"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
     <EditText
         android:id="@+id/editText_Preis"
         android:layout_width="263dp"
         android:layout_height="52dp"
+        android:autofillHints="no"
         android:ems="10"
+        android:hint="@string/preis"
         android:inputType="textPersonName"
         android:text="@string/preis"
+        android:textColor="#FAFAFA"
         app:layout_constraintBottom_toTopOf="@+id/editText_Menge"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/editText_Produktname" />
 
     <EditText
         android:id="@+id/editText_Menge"
         android:layout_width="260dp"
         android:layout_height="55dp"
+        android:autofillHints="no"
         android:ems="10"
+        android:hint="@string/menge"
         android:inputType="textPersonName"
         android:text="@string/menge"
+        android:textColor="#FAFAFA"
         app:layout_constraintBottom_toTopOf="@+id/editText_Allergene"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/editText_Preis" />
 
     <EditText
         android:id="@+id/editText_Allergene"
         android:layout_width="256dp"
         android:layout_height="56dp"
+        android:autofillHints="no"
         android:ems="10"
+        android:hint="@string/allergene"
         android:inputType="textPersonName"
         android:text="@string/allergene"
+        android:textColor="#FAFAFA"
         app:layout_constraintBottom_toBottomOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/editText_Menge" />
 
     <CheckBox
