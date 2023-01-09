@@ -4,24 +4,31 @@ import java.util.ArrayList;
 
 public class Ernaehrungsform {
 
-    private String name;
-    //private ArrayList<Produkt> produkt;
-
-    public Ernaehrungsform(String name) {
-        this.name = name;
+    enum Ernaehrung {
+        VEGETARISCH,
+        VEGAN,
+        HALAL,
+        KOSCHER
     }
 
-    public static final Ernaehrungsform VEGETARISCH = new Ernaehrungsform("vegetarisch");
-    public static final Ernaehrungsform VEGAN = new Ernaehrungsform("vegan");
-    public static final Ernaehrungsform HALAL = new Ernaehrungsform("halal");
-    public static final Ernaehrungsform KOSCHER = new Ernaehrungsform("koscher");
+    private Ernaehrung name;
+    private ArrayList<Produkt> produkt;
 
-    public String getName() {
+    public Ernaehrungsform(Ernaehrung name, ArrayList<Produkt> produkt) {
+        this.name = name;
+        this.produkt = produkt;
+    }
+
+    public Ernaehrung getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(Ernaehrung name) {
         this.name = name;
     }
+    public void addProdukt(Produkt produkt) {
+        this.produkt.add(produkt);
+    }
 
-} //lieber als enum klasse
+
+}
