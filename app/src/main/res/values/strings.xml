@@ -36,4 +36,5 @@
     <string name="benutzerprofil">Benutzerprofil</string>
     <string name="qr_code">QR-Code</string>
     <string name="zutaten_ausw_hlen">Zutaten auswählen</string>
+    <string name="foto_hochladen_str">Foto hochladen</string>
 </resources>

@@ -10,9 +10,9 @@ public class Produkt {
     private int preis;
     private String allergene;
     private ArrayList<Bewertung> bewertung;
-    private ArrayList<Ernaehrungsform> ernaehrungsformen;
+    private ArrayList<Ernaehrungsform.Ernaehrung> ernaehrungsformen;
 
-    public Produkt(int menge, String name, int produktID, int preis, String allergene, ArrayList<Bewertung> bewertung, ArrayList<Ernaehrungsform> ernaehrungsformen) {
+    public Produkt(int menge, String name, int produktID, int preis, String allergene, ArrayList<Bewertung> bewertung, ArrayList<Ernaehrungsform.Ernaehrung> ernaehrungsformen) {
         this.menge = menge;
         this.name = name;
         this.produktID = produktID;
@@ -34,7 +34,7 @@ public class Produkt {
         this.allergene = allergene;
     }
 
-    public void selectErnaehrungsform(Ernaehrungsform ernaehrungsform) {
+    public void selectErnaehrungsform(Ernaehrungsform.Ernaehrung ernaehrungsform) {
         this.ernaehrungsformen.add(ernaehrungsform);
     }
 
@@ -62,7 +62,7 @@ public class Produkt {
         this.menge = menge;
     }
 
-    public ArrayList<Ernaehrungsform> getErnaehrungsformen() {
+    public ArrayList<Ernaehrungsform.Ernaehrung> getErnaehrungsformen() {
         return ernaehrungsformen;
     }
 

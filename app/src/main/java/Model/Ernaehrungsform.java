@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Ernaehrungsform {
 
-    enum Ernaehrung {
+    public enum Ernaehrung {
         VEGETARISCH,
         VEGAN,
         HALAL,
