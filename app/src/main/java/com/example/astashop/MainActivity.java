@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private String produktname_str, preis_str, menge_str, allergene_str;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private Ernaehrungsform halal_e, koscher_e, vegetarisch_e, vegan_e;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +52,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //binding = ActivityMainBinding.inflate(getLayoutInflater());
         //setContentView(binding.getRoot());
-        halal_e = new Ernaehrungsform(HALAL, new ArrayList<Produkt>());
-        koscher_e = new Ernaehrungsform(KOSCHER, new ArrayList<Produkt>());
-        vegetarisch_e = new Ernaehrungsform(VEGETARISCH, new ArrayList<Produkt>());
-        vegan_e = new Ernaehrungsform(VEGAN, new ArrayList<Produkt>());
         halal = findViewById(R.id.checkBox_Halal);
         koscher = findViewById(R.id.checkBox_Koscher);
         vegetarisch = findViewById(R.id.checkBox_Vegetarisch);
