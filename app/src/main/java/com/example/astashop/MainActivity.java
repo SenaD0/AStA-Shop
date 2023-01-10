@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private Mitarbeiter mitarbeiter;
     private Button bestaetigen, zutaten_bearbeiten, foto_hochladen;
     private CheckBox halal, koscher, vegetarisch, vegan;
-    private boolean halal_b, koscher_b, vegetarisch_b, vegan_b;
     private EditText produktname, preis, menge, allergene;
     private String produktname_str, preis_str, menge_str, allergene_str;
     private AppBarConfiguration appBarConfiguration;
