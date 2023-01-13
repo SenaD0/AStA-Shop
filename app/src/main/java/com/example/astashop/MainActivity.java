@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.preference.PreferenceManager;
 import android.view.View;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -29,6 +30,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -38,11 +40,15 @@ import Model.Produkt;
 
 public class MainActivity extends AppCompatActivity {
 
+    public FragmentManager fragmentMangager = getSupportFragmentManager();
+
     private Mitarbeiter mitarbeiter;
     private Button bestaetigen, zutaten_bearbeiten, foto_hochladen;
     private CheckBox halal, koscher, vegetarisch, vegan;
     private EditText produktname, preis, menge, allergene;
     private String produktname_str, preis_str, menge_str, allergene_str;
+
+    private ImageButton home, qrcode, profilanzeigen;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -52,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //binding = ActivityMainBinding.inflate(getLayoutInflater());
         //setContentView(binding.getRoot());
+        home = findViewById(R.id.home_button);
+        qrcode = findViewById(R.id.qrButton);
+        profilanzeigen = findViewById(R.id.profile_button);
         halal = findViewById(R.id.checkBox_Halal);
         koscher = findViewById(R.id.checkBox_Koscher);
         vegetarisch = findViewById(R.id.checkBox_Vegetarisch);
@@ -119,7 +128,26 @@ public class MainActivity extends AppCompatActivity {
                 setContentView((R.layout.foto_hochladen));
             }
         });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.fragment_first);
+            }
+        });
+        qrcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.qr_code);
+            }
+        });
+        profilanzeigen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.fragment_second);
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
