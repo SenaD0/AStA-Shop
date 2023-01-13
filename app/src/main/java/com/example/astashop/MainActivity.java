@@ -7,18 +7,15 @@ import static Model.Ernaehrungsform.Ernaehrung.KOSCHER;
 import static Model.Ernaehrungsform.Ernaehrung.VEGAN;
 import static Model.Ernaehrungsform.Ernaehrung.VEGETARISCH;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import com.example.astashop.databinding.ActivityMainBinding;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.preference.PreferenceManager;
 import android.view.View;
 
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -32,15 +29,15 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.example.astashop.databinding.ActivityMainBinding;
+
 import java.util.ArrayList;
 
 import Model.Ernaehrungsform;
 import Model.Mitarbeiter;
-import Model.Produkt;
 
 public class MainActivity extends AppCompatActivity {
 
-    public FragmentManager fragmentMangager = getSupportFragmentManager();
 
     private Mitarbeiter mitarbeiter;
     private Button bestaetigen, zutaten_bearbeiten, foto_hochladen;
@@ -119,31 +116,41 @@ public class MainActivity extends AppCompatActivity {
         zutaten_bearbeiten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.zutatenliste);
+                Intent intent = new Intent(MainActivity.this, ZutatenlisteActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
         foto_hochladen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView((R.layout.foto_hochladen));
+                Intent intent = new Intent(MainActivity.this, FotohochladenActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.fragment_first);
+                Intent intent = new Intent(MainActivity.this, StartseiteActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
         qrcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.qr_code);
+                Intent intent = new Intent(MainActivity.this, QrcodeActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
         profilanzeigen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.fragment_second);
+                Intent intent = new Intent(MainActivity.this, ProfilActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

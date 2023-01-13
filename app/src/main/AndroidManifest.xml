@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AStAShop"
         tools:targetApi="31">
         <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartseiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QrcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FotohochladenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZutatenlisteActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
