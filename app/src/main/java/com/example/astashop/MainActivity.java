@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     ernaehrungsformen.add(VEGETARISCH);
                 if (vegan.isChecked())
                     ernaehrungsformen.add(VEGAN);
-                mitarbeiter.addProdukt(produktname_str, parseInt(menge_str), parseInt(preis_str), allergene_str, ernaehrungsformen);
+                //mitarbeiter.addProdukt(produktname_str, parseInt(menge_str), parseInt(preis_str), allergene_str, ernaehrungsformen);
 
             }
         });
